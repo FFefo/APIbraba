@@ -6,7 +6,7 @@ servidor.get('/calculadora/soma/:n1/:n2', (req, resp) => {
     let n2 = Number(req.params.n2)
     let soma = n1 + n2  
 
-    resp.send('A soma dos dois números é: ' + soma);
+    resp.send('A soma dos números é: ' + soma);
 })
 
 servidor.listen(5001, () => console.log('A API ta no galera'))
